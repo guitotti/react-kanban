@@ -12,6 +12,14 @@ export const TaskBoard: React.FC = () => {
       status: "todo",
       priority: "high",
     },
+    {
+      id: 4,
+      title: "Implementar testes",
+      description:
+        "Desenvolver os testes automatizados na nova funcionalidade do aplicativo.",
+      status: "todo",
+      priority: "low",
+    },
   ];
   const tasksInProgress: Task[] = [
     {
