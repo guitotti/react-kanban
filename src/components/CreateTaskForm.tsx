@@ -1,5 +1,6 @@
 import { PlusIcon } from "@radix-ui/react-icons";
 import {
+  Badge,
   Box,
   Button,
   Dialog,
@@ -62,9 +63,15 @@ export const CreateTaskForm: React.FC = () => {
                   Situação
                 </Text>
                 <RadioGroup.Root name="status" defaultValue="todo">
-                  <RadioGroup.Item value="todo">Para fazer</RadioGroup.Item>
-                  <RadioGroup.Item value="doing">Em progresso</RadioGroup.Item>
-                  <RadioGroup.Item value="done">Concluído</RadioGroup.Item>
+                  <RadioGroup.Item value="todo">
+                    <Badge color="gray">Para fazer</Badge>
+                  </RadioGroup.Item>
+                  <RadioGroup.Item value="doing">
+                    <Badge color="yellow">Em progresso</Badge>
+                  </RadioGroup.Item>
+                  <RadioGroup.Item value="done">
+                    <Badge color="green">Concluído</Badge>
+                  </RadioGroup.Item>
                 </RadioGroup.Root>
               </Box>
 
@@ -73,9 +80,15 @@ export const CreateTaskForm: React.FC = () => {
                   Prioridade
                 </Text>
                 <RadioGroup.Root name="priority" defaultValue="low">
-                  <RadioGroup.Item value="low">Baixa</RadioGroup.Item>
-                  <RadioGroup.Item value="medium">Média</RadioGroup.Item>
-                  <RadioGroup.Item value="high">Alta</RadioGroup.Item>
+                  <RadioGroup.Item value="low">
+                    <Badge color="sky">Baixa</Badge>
+                  </RadioGroup.Item>
+                  <RadioGroup.Item value="medium">
+                    <Badge color="amber">Média</Badge>
+                  </RadioGroup.Item>
+                  <RadioGroup.Item value="high">
+                    <Badge color="tomato">Alta</Badge>
+                  </RadioGroup.Item>
                 </RadioGroup.Root>
               </Box>
             </Flex>
