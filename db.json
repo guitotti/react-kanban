@@ -2,38 +2,45 @@
   "tasks": [
     {
       "id": "1",
-      "title": "Enviar relatório",
-      "description": "Enviar o relatório mensal para o departamento financeiro.",
-      "status": "doing",
+      "title": "Desenvolver tela de cadastro",
+      "description": "Criar a interface de cadastro de novos usuários.",
+      "status": "todo",
       "priority": "high"
     },
     {
       "id": "2",
-      "title": "Reunião com a equipe",
-      "description": "Reunião para discutir o progresso do projeto e próximos passos.",
+      "title": "Implementar chat em grupo",
+      "description": "Desenvolver funcionalidade de chat em grupo.",
+      "status": "doing",
+      "priority": "medium"
+    },
+    {
+      "id": "3",
+      "title": "Configurar autenticação",
+      "description": "Implementar sistema de autenticação de usuários.",
       "status": "todo",
       "priority": "high"
     },
     {
-      "id": "3",
-      "title": "Atualizar o site",
-      "description": "Fazer atualizações no site da empresa com novas informações.",
+      "id": "4",
+      "title": "Testar envio de arquivos",
+      "description": "Realizar testes para envio de arquivos no chat.",
       "status": "done",
       "priority": "medium"
     },
     {
-      "id": "4",
-      "title": "Implementar testes",
-      "description": "Desenvolver os testes automatizados na nova funcionalidade do aplicativo.",
-      "status": "todo",
-      "priority": "medium"
+      "id": "5",
+      "title": "Otimizar desempenho",
+      "description": "Otimizar o desempenho do aplicativo para melhor experiência do usuário.",
+      "status": "doing",
+      "priority": "high"
     },
     {
-      "id": "defa",
-      "title": "Teste",
-      "description": "Teste",
+      "id": "6",
+      "title": "Implementar chamadas de vídeo",
+      "description": "Adicionar funcionalidade de chamadas de vídeo no chat.",
       "status": "todo",
-      "priority": "low"
+      "priority": "high"
     }
   ]
 }
