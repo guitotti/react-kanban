@@ -40,7 +40,10 @@ export const TasksContextProvider: React.FC<TasksContextProviderProps> = ({
     attributes: Partial<Omit<Task, "id">>
   ) => {};
 
-  const deleteTask = async (id: number) => {};
+  const deleteTask = async (id: number) => {
+    await tasksService.deleteTask(id);
+    setTasks((currentState) => currentState.filter((task) => task.id !== id));
+  };
 
   return (
     <TasksContext.Provider
